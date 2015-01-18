@@ -1,7 +1,7 @@
 // Stephen Burgos from textbook for CIS 363
-// Last Changed: Jan.7.15
+// Last Changed: Jan.18.15
 
-var censoredWords = ["damn", "hell", "darn", "heck"];
+var censoredWords = ["damn", "hell", "darn", "heck","barcalounger"];
 var customCensoredWords = [];
 function censor(inStr) {
 	for (idx in censoredWords) {

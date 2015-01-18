@@ -11,7 +11,7 @@
 6 error     <http://github.com/npm/npm/issues>
 7 error System Windows_NT 6.1.7601
 8 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "pack"
-9 error cwd C:\Users\Stephen\Google Drive\School\_Internet\Assignment 1
+9 error cwd C:\Users\Stephen\Google Drive\School\_Internet\censorifySDB
 10 error node -v v0.10.35
 11 error npm -v 1.4.28
 12 error path C:\Users\Stephen\AppData\Roaming\npm
