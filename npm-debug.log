@@ -1,20 +1,111 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
-1 verbose cli   'pack' ]
+1 verbose cli   'publish' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose node symlink C:\Program Files\nodejs\\node.exe
-5 error Error: ENOENT, stat 'C:\Users\Stephen\AppData\Roaming\npm'
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Windows_NT 6.1.7601
-8 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "pack"
-9 error cwd C:\Users\Stephen\Google Drive\School\_Internet\censorifySDB
-10 error node -v v0.10.35
-11 error npm -v 1.4.28
-12 error path C:\Users\Stephen\AppData\Roaming\npm
-13 error code ENOENT
-14 error errno 34
-15 verbose exit [ 34, true ]
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\Stephen\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\Stephen\\AppData\\Roaming\\npm-cache\\pickle\\1.1.1\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package.tgz
+13 verbose folder .
+14 info prepublish pickle@1.1.1
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\Stephen\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 811f4d13-m-cache-pickle-1-1-1-package-tgz tar://C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package.tgz
+18 verbose lock tar://C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package.tgz C:\Users\Stephen\AppData\Roaming\npm-cache\811f4d13-m-cache-pickle-1-1-1-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 811f4d13-m-cache-pickle-1-1-1-package-tgz tar://C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package.tgz
+22 silly lockFile 811f4d13-m-cache-pickle-1-1-1-package-tgz tar://C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package.tgz
+23 silly lockFile bb00acc4-g-npm-cache-pickle-1-1-1-package C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package
+24 verbose lock C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package C:\Users\Stephen\AppData\Roaming\npm-cache\bb00acc4-g-npm-cache-pickle-1-1-1-package.lock
+25 silly lockFile bb00acc4-g-npm-cache-pickle-1-1-1-package C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package
+26 silly lockFile bb00acc4-g-npm-cache-pickle-1-1-1-package C:\Users\Stephen\AppData\Roaming\npm-cache\pickle\1.1.1\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { author: { name: 'Stephen Burgos' },
+29 silly publish   name: 'pickle',
+29 silly publish   version: '1.1.1',
+29 silly publish   description: 'Censors words out of text',
+29 silly publish   main: 'censortext',
+29 silly publish   dependencies: {},
+29 silly publish   engines: { node: '*' },
+29 silly publish   readme: 'Read this',
+29 silly publish   readmeFilename: 'readme.md',
+29 silly publish   gitHead: '0cb78a2e33465e04fbf6a862e251c345c0f3000a',
+29 silly publish   _id: 'pickle@1.1.1',
+29 silly publish   scripts: {},
+29 silly publish   _shasum: 'c72f4778d59b1f4f1f9f80f92eb20123d7939a14',
+29 silly publish   _from: '.' }
+30 verbose request where is /pickle
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id b9dbbe915708f259
+33 verbose url raw /pickle
+34 verbose url resolving [ 'https://registry.npmjs.org/', './pickle' ]
+35 verbose url resolved https://registry.npmjs.org/pickle
+36 verbose request where is https://registry.npmjs.org/pickle
+37 info trying registry request attempt 1 at 10:10:07
+38 http PUT https://registry.npmjs.org/pickle
+39 http 403 https://registry.npmjs.org/pickle
+40 verbose headers { date: 'Sun, 18 Jan 2015 15:10:05 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '2433',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1421593805.330894,VS0,VE237',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden user: thedeadman782004 not authorized to modify pickle
+42 error Changed: description "A Python pickled object <-> JSON transport. Writing/reading Python pickled objects to Javascript objects." -> "Censors words out of text"
+42 error Changed: dist-tags.latest "0.2.0" -> "1.1.1"
+42 error Added: versions.1.1.1
+42 error Changed: readme "# node_pickle\u000a  \u000a  A really, admittedly, lazy interface into Python for pickling/unpickling an object.\u000a  The interface mimics Python's pickle.dumps & pickle.loads.  \u000a  \u000a     var pickle = require('./lib/pickle');\u000a     \u000a     pickle.dumps({hello: \"world\"}, function(pickled)\u000a     {\u000a       console.log(\"pickled:\", pickled);\u000a       pickle.loads(pickled, function(original)\u000a       {\u000a         console.log(\"original:\", original);\u000a       });\u000a     });\u000a\u000a## License \u000a\u000a(The MIT License)\u000a\u000aCopyright (c) 2011 Matt Robenolt &lt;root@drund.com&gt;\u000a\u000aPermission is hereby granted, free of charge, to any person obtaining\u000aa copy of this software and associated documentation files (the\u000a'Software'), to deal in the Software without restriction, including\u000awithout limitation the rights to use, copy, modify, merge, publish,\u000adistribute, sublicense, and/or sell copies of the Software, and to\u000apermit persons to whom the Software is furnished to do so, subject to\u000athe following conditions:\u000a\u000aThe above copyright notice and this permission notice shall be\u000aincluded in all copies or substantial portions of the Software.\u000a\u000aTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\u000aEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\u000aMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\u000aIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\u000aCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\u000aTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\u000aSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\u000a" -> "Read this"
+42 error Changed: time.modified "2012-05-17T20:18:12.077Z" -> "2015-01-18T15:12:47.984Z"
+42 error Added: time.1.1.1
+42 error Changed: author.name "Matt Robenolt" -> "Stephen Burgos"
+42 error Deleted: repository
+42 error Changed: readmeFilename "" -> "readme.md"
+42 error Added: _attachments: pickle
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:944:16
+42 error     at process._tickCallback (node.js:442:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.1.7601
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd C:\Users\Stephen\Google Drive\School\_Internet\censorifySDB
+47 error node -v v0.10.35
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
